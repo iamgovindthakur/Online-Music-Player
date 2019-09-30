@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Online Music Player</title>
+	<link rel="icon" href="images/favicon.ico" type="image/icon" sizes="16x16">
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+        <!-- <link rel="stylesheet" href="css/bootswatch.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- CSS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="css/styles.css" class="css">
+  </head>
+  <body oncontextmenu="return false">
+    <!-- About Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">About us</h4>
+          </div>
+          <div class="modal-body">
+
+            <h3>Languages</h3>
+            <p>
+              <ul>
+				 <li>Hindi</li>
+				 <li>English</li>
+				 <li>Kanad</li>
+				<li>Tamil</li>
+                <li>Telgu</li>
+                <li>Bhojpuri</li>
+              </ul>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <p>Thanks for Listinig Music With Us.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="hireModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Ping Us!</h4>
+          </div>
+          <div class="modal-body">
+            <h2>Sri Sairam College of Engineering,</h2>
+            <h2>Anekal,Bengaluru</h2>
+            <h2>562106</h2>
+            <p>
+              You can connect with me on Twitter, LinkedIn,Facebook or GitHub below.
+            </p>
+            <ul class="list-inline text-center">
+              <li><a href="https://twitter.com/iamgovindthakur"><i class="fa fa-twitter fa-2x"></i></a></li>
+              <li><a href="https://github.com/iamgovindthakur"><i class="fa fa-github fa-2x"></i></a></li>
+			 <li><a href="https://facebook.com/iamgovindthakur"><i class="fa fa-facebook fa-2x"></i></a></li>
+              <li><a href="https://linkedin.com/iamgovindthakur"><i class="fa fa-linkedin fa-2x"></i></a></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <p>Thanks for contacting us</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <nav class="navbar navbar-inverse navbar-fixed-top">
+       <div class="container">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="#">Home</a>
+           <p class="navbar-text navbar-right">Online Music Player</p>
+         </div>
+         <div id="navbar" class="navbar-collapse collapse">
+           <ul class="nav navbar-nav">
+           </ul>
+           <ul class="nav navbar-nav navbar-right">
+			<li><a href="#" data-toggle="modal" data-target="#myModal">About us</a></li>
+             <li><a href="#" data-toggle="modal" data-target="#hireModal">contact us</a></li>
+             <li><a href="https://twitter.com/iamgovindthakur"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="https://github.com/iamgovindthakur"><i class="fa fa-github"></i></a></li>
+             <li><a href="https://linkedin.com/iamgovindthakur"><i class="fa fa-linkedin"></i></a></li>
+			   <li><a href="https://fb.com/iamgovindthakur"><i class="fa fa-facebook"></i></a></li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+
+     <div class="jumbotron animated fadeIn">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Trending Song thsi week</h2>
+            <table cellpadding="5">
+                 <tr>
+                   <td>Backbone</td>
+                   <td>  <audio controls>
+          <source src="music/Backbone.mp3" type="audio/mpeg">
+         </audio></td>
+                 </tr>
+                 <tr>
+                   <td>Cheap Thrills</td>
+                   <td>  <audio controls>
+                   <source src="music/CheapThrills.mp3" type="audio/mpeg">
+                 </tr>
+                 <tr>
+                   <td>Cheez Badi</td>
+                   <td>  <audio controls>
+                  <source src="music/Cheez Badi.mp3" type="audio/mpeg">
+                 </tr>
+                 <tr>
+                   <td>Fan</td>
+                   <td>  <audio controls>
+                  <source src="music/fan.mp3" type="audio/mpeg">
+                 </tr>
+                 <tr>
+                   <td>Claydee Alena</td>
+                   <td>  <audio controls>
+                   <source src="music/Claydee Alena.mp3" type="audio/mpeg">
+                 </tr>
+            </table>
+
+          </div>
+          <div class="col-md-4">
+            <img src="images/cvr.jpg" class="headshot img-responsive img-circle float-right" alt="Responsive image">
+          </div>
+        </div>
+     </div>
+     </div>
+
+
+     <div class="container">
+      <div class="row">
+        <h3 class="text-center"> Up Coming Album</h3>
+        <p class="lead text-center">Songs Coming Next Week</p>
+      </div>
+     <div class="row">
+       <div class="col-sm-6 col-md-4">
+         <div class="animated slideInUp">
+           <img src="images/cvr.jpg" alt="Portfolio Project" class="img-responsive" alt="Responsive image">
+           <div class="caption">
+             <h3>Dhoom 4</h3>
+             <h4>Artist</h4>
+             <ul class="list-inline">
+               <li>sonu nigam</li>
+               <li>kumar sanu<li>
+             </ul>
+             </div>
+         </div>
+       </div>
+       <div class="col-sm-6 col-md-4">
+         <div class="animated slideInUp">
+           <img src="images/cvr.jpg" class="img-responsive" alt="Responsive image" alt="Portfolio Project">
+           <div class="caption">
+             <h3>krish 5</h3>
+             <h4>Artist</h4>
+             <ul class="list-inline">
+               <li>sonu nigam</li>
+               <li>kumar sanu<li>
+             </ul>
+            </div>
+         </div>
+       </div>
+       <div class="col-sm-6 col-md-4">
+         <div class="animated slideInUp">
+           <img src="images/cvr.jpg" alt="Portfolio Project" class="img-responsive center-block" alt="Julie Code headshot">
+           <div class="caption">
+             <h3>Dabang 4</h3>
+             <h4>Artist</h4>
+             <ul class="list-inline">
+               <li>sonu nigam</li>
+               <li>kumar sanu<li>
+             </ul>
+            </div>
+         </div>
+       </div>
+	   </div>
+     <br>
+     <br>
+		 <div class="row">
+       <div class="col-sm-6 col-md-4">
+         <div class="animated slideInUp">
+           <img src="images/cvr.jpg" alt="Portfolio Project" class="img-responsive center-block" alt="Julie Code headshot">
+           <div class="caption">
+             <h3>Don 4</h3>
+             <h4>Artist</h4>
+             <ul class="list-inline">
+               <li>sonu nigam</li>
+               <li>kumar sanu<li>
+             </ul>
+            </div>
+         </div>
+       </div>
+       <div class="col-sm-6 col-md-4">
+         <div class="animated slideInUp">
+           <img src="images/cvr.jpg" alt="Portfolio Project" class="img-responsive center-block" alt="Julie Code headshot">
+           <div class="caption">
+             <h3>housefull 4</h3>
+             <h4>Artist</h4>
+             <ul class="list-inline">
+               <li>sonu nigam</li>
+               <li>kumar sanu<li>
+             </ul>
+            </div>
+         </div>
+       </div>
+       <div class="col-sm-6 col-md-4">
+         <div class="animated slideInUp">
+           <img src="images/cvr.jpg" alt="Portfolio Project" class="img-responsive center-block" alt="Julie Code headshot">
+           <div class="caption">
+             <h3>Bahubali 3</h3>
+             <h4>Artist</h4>
+             <ul class="list-inline">
+               <li>sonu nigam</li>
+               <li>kumar sanu<li>
+             </ul>
+            </div>
+         </div>
+       </div>
+
+     </div>
+    </div>
+
+    <footer class="portfolio-footer">
+      <div class="container">
+        <p text-align:centre>
+          &copy; 2019-20 All projects and copyright are reserved maintained by -Govind Kumar Thakur .
+        </p>
+      </div>
+    </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
+</html>
